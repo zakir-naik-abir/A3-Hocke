@@ -11,6 +11,10 @@ body{
 :root{
   --black--: #131318;
   --gray--: #13131899;
+  --btn-color--: #FF4240;
+}
+span{
+  color: var(--btn-color--);
 }
 p{
   font-size: 16px;
@@ -25,15 +29,20 @@ h1{
   font-family: Manrope;
 }
 h2{
+  font-size: 24px;
+  /* color: var(--black--); */
+  font-weight: 700;
+  font-family: Manrope;
+}
+h3{
   font-size: 20px;
   color: var(--black--);
   font-weight: 700;
   font-family: Manrope;
 }
-h3{
+h4{
   font-size: 18px;
   color: var(--black--);
   font-weight: 700;
   font-family: Manrope;
-
 }

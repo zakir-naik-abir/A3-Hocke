@@ -32,14 +32,300 @@
 <body>
   <!-- header -->
   <header class="container mx-auto">
-    
+    <!-- nav -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl"><h1>Hocke<span>'</span>s</h1></a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="#"><span>Home</span></a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-x-5">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a class="btn bg-[#FF4240] text-fuchsia-50">Get Ticket</a>
+      </div>
+    </div>
+    <!-- banner -->
+    <div class="container w-auto">
+      <div class="carousel w-full lg:h-[450px]">
+        <div id="slide1" class="carousel-item relative w-full ">
+          <img src="img/1.png" class="w-full " />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>       
+      </div>
+      <!-- text -->
+      <div class="lg:absolute md:w-full lg:w-[500px] bg-black p-8 rounded-xl lg:right-10 lg:bottom-[-60px] xl:right-100 xl:bottom-[300px]">
+        <h2 class="text-white">Meet all the heroes from the field</h2>
+        <p class="text-gray-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+    </div>
   </header>
   <!-- main -->
   <main class="container mx-auto">
-    
+    <!-- hockeys club -->
+    <section class="grid grid-cols-1">
+      <div class="text-center">
+        <h1>Professional Hockeys Club</h1>
+        <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>dolor. Purus urna in sit nullam proin.</p>
+      </div>
+      <!-- circle -->
+      <div class="lg:flex justify-between grid grid-cols-1 md:grid-cols-2">
+        <div class="text-center">
+          <div class="radial-progress text-primary" style="--value:87;" role="progressbar">87%</div>
+          <h3>Prayer Facility</h3>
+          <p>Amet consectetur.Condimentum <br>dignissim adipiscing.</p>
+        </div>
+        <div class="text-center">
+          <div class="radial-progress text-primary" style="--value:95;" role="progressbar">95%</div>
+          <h3>Experienced Coach</h3>
+          <p>Amet consectetur.Condimentum <br>dignissim adipiscing.</p>
+        </div>
+        <div class="text-center">
+          <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
+          <h3>Senior Player</h3>
+          <p>Amet consectetur.Condimentum <br>dignissim adipiscing.</p>
+        </div>
+        <div class="text-center">
+          <div class="radial-progress text-primary" style="--value:80;" role="progressbar">80%</div>
+          <h3>Training Ground</h3>
+          <p>Amet consectetur.Condimentum <br>dignissim adipiscing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- program section -->
+    <section>
+      <div class="text-center">
+        <h1>Program Sections</h1>
+        <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>dolor. Purus urna in sit nullam proin.</p>
+      </div>
+      <!-- program banner -->
+      <div class="grid grid-cols-2 gap-6">
+        <div class="relative">
+          <img src="img/2.png" alt="">
+          <div class="lg:absolute top-20 left-4">
+            <h2>Junior Program</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+            <br>enim sagittis turpis in magna. Id et sed euismod natoque amet <br>nunc morbi nulla. Tortor congue sed et in.</p>
+            <a class="btn bg-[#FF4240] text-fuchsia-50">Register Now!</a>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="img/3.png" alt="">
+          <div class="lg:absolute top-20 left-4">
+            <h2>Teenager Program</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+            <br>enim sagittis turpis in magna. Id et sed euismod natoque amet <br>nunc morbi nulla. Tortor congue sed et in.</p>
+            <a class="btn bg-[#FF4240] text-fuchsia-50">Register Now!</a>
+          </div>
+        </div>
+        <div class="relative col-span-2 w-auto">
+          <img src="img/4.png" alt="">
+          <div class="lg:absolute top-20 left-4">
+            <h2>Professional Program</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+            <br>enim sagittis turpis in magna. Id et sed euismod natoque amet <br>nunc morbi nulla. Tortor congue sed et in.</p>
+            <a class="btn bg-[#FF4240] text-fuchsia-50">Register Now!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- new products section -->
+    <section>
+      <div class="text-center">
+        <h1>Program Sections</h1>
+        <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>dolor. Purus urna in sit nullam proin.</p>
+      </div>
+      <!-- card banner -->
+      <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-5 sm:grid-cols-1">
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="img/5.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex">
+              <p><i class="fa-solid fa-star"></i> 5.0</p>
+              <p><i class="fa-regular fa-eye"></i> 20</p>
+              <p><i class="fa-regular fa-heart"></i> 200</p>
+            </div>
+            <h2 class="card-title"></h2>
+            <p>Dolor sit amet consectetur. Ut urna diam <br>quis sagittis. </p>
+            <div class="flex justify-start">
+              <h3><span>Price-$22.00</span></h3>
+              <p><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:Free</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="img/6.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex">
+              <p><i class="fa-solid fa-star"></i> 5.0</p>
+              <p><i class="fa-regular fa-eye"></i> 20</p>
+              <p><i class="fa-regular fa-heart"></i> 200</p>
+            </div>
+            <h2 class="card-title"></h2>
+            <p>Dolor sit amet consectetur. Ut urna diam <br>quis sagittis. </p>
+            <div class="flex justify-start">
+              <h3><span>Price-$22.00</span></h3>
+              <p><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:Free</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="img/7.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex">
+              <p><i class="fa-solid fa-star"></i> 5.0</p>
+              <p><i class="fa-regular fa-eye"></i> 20</p>
+              <p><i class="fa-regular fa-heart"></i> 200</p>
+            </div>
+            <h2 class="card-title"></h2>
+            <p>Dolor sit amet consectetur. Ut urna diam <br>quis sagittis. </p>
+            <div class="flex justify-start">
+              <h3><span>Price-$22.00</span></h3>
+              <p><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:Free</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="img/8.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex">
+              <p><i class="fa-solid fa-star"></i> 5.0</p>
+              <p><i class="fa-regular fa-eye"></i> 20</p>
+              <p><i class="fa-regular fa-heart"></i> 200</p>
+            </div>
+            <h2 class="card-title"></h2>
+            <p>Dolor sit amet consectetur. Ut urna diam <br>quis sagittis. </p>
+            <div class="flex justify-start">
+              <h3><span>Price-$22.00</span></h3>
+              <p><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:Free</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="img/9.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex">
+              <p><i class="fa-solid fa-star"></i> 5.0</p>
+              <p><i class="fa-regular fa-eye"></i> 20</p>
+              <p><i class="fa-regular fa-heart"></i> 200</p>
+            </div>
+            <h2 class="card-title"></h2>
+            <p>Dolor sit amet consectetur. Ut urna diam <br>quis sagittis. </p>
+            <div class="flex justify-start">
+              <h3><span>Price-$22.00</span></h3>
+              <p><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:Free</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="img/10.png" alt="Movie"/></figure>
+          <div class="card-body">
+            <div class="flex">
+              <p><i class="fa-solid fa-star"></i> 5.0</p>
+              <p><i class="fa-regular fa-eye"></i> 20</p>
+              <p><i class="fa-regular fa-heart"></i> 200</p>
+            </div>
+            <h2 class="card-title"></h2>
+            <p>Dolor sit amet consectetur. Ut urna diam <br>quis sagittis. </p>
+            <div class="flex justify-start">
+              <h3><span>Price-$22.00</span></h3>
+              <p><i class="fa-solid fa-cart-shopping"></i> Delivery Fee:Free</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- question section -->
+    <section>
+      <div class="text-center">
+        <h1>Clients Question</h1>
+        <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>dolor. Purus urna in sit nullam proin.</p>
+      </div>
+      <!-- card banner -->
+    </section>
+
+    <!-- media section -->
+    <section>
+      <div class="text-center">
+        <h3>Social Media</h3>
+        <div class="space-x-5">
+          <a href="https://twitter.com/ZakirNa30867313"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.facebook.com/zakir.hasan.abir/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/zakirnaik_abir/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/zakir-naik-abir"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </section>
   </main>
   <!-- fotter -->
 
-  <footer></footer>
+  <footer class="footer p-10 bg-base-200 text-base-content">
+    <nav>
+      <h2>Get In Touch</h2>
+      <p>Dit amet consectetur. Condimentum  <br>adipiscing aliquam turpis placerat dolor. Purus <br>urna in sit nullam proin.</p>
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>hockeys@support.com</h3>
+      </div>
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-phone"></i>
+        <h3>+880 1833-217543</h3>
+      </div>
+    </nav> 
+    <nav>
+      <header class="footer-title">Company</header> 
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Leadership</a>
+      <a class="link link-hover">Careers</a>
+      <a class="link link-hover">News & Article</a>
+      <a class="link link-hover">Legal Notice</a>
+    </nav> 
+    <nav>
+      <header class="footer-title">Support</header> 
+      <a class="link link-hover">Help Center</a>
+      <a class="link link-hover">FAQ</a>
+      <a class="link link-hover">Ticket Support</a>
+      <a class="link link-hover">Contact Us</a>
+    </nav>
+    <nav>
+      <header class="footer-title">Services</header> 
+      <a class="link link-hover">Academy</a>
+      <a class="link link-hover">Group Lesson</a>
+      <a class="link link-hover">Private Lesson</a>
+      <a class="link link-hover">Hockeys for kids</a>
+      <a class="link link-hover">Hockeys for Adult</a>
+    </nav> 
+  </footer>
 </body>
 </html>
